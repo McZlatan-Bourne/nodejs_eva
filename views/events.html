@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <ul>
+      {% for event in events %}
+        {{ event.name }}
+      {% endfor %}
+    </ul>
+  </body>
+</html>
