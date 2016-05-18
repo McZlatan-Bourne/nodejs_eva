@@ -1,0 +1,18 @@
+{
+  "name": "nodejs_eva",
+  "version": "0.0.1",
+  "description": "An event viewing app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/McZlatan-Bourne/nodejs_eva.git"
+  },
+  "author": "Olakanmi McZlatan Bourne <bournethesonofthegun[at]gmail[dot]com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/McZlatan-Bourne/nodejs_eva/issues"
+  }
+}
