@@ -14,7 +14,7 @@ nunjucksEnv.express( app );
 
 const MongoClient = require("mongodb").MongoClient
 var db
-MongoClient.connect("mongodb://127.0.0.1:27017/eva", (err, database) => {
+MongoClient.connect("mongodb://mczlatan_bourne:nodejs_eva123@ds011873.mlab.com:11873/nodejs_eva", (err, database) => {
   assert.equal(null, err);
   //if (err) return console.log(err)
   db = database
