@@ -34,6 +34,10 @@ app.get("/upload-event", function (req, res) {
     res.render("upload.html");
 })
 
+app.get("/admin", function (req, res) {
+    res.render("admin.html");
+})
+
 app.post('/upload-event', (req, res) => {
   var item = {
     event_name: req.body.event_name,
