@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var express = require("express");
 var app = express();
 
@@ -17,8 +19,6 @@ var db
 var db_username = process.env.NODEJS_EVA_DB_USERNAME
 var db_password = process.env.NODEJS_EVA_DB_PASSWORD
 var db_url = "mongodb://" + db_username + ":" + db_password + "@ds011873.mlab.com:11873/nodejs_eva"
-//console.log(db_url)
-//console.log(db_username, db_password);
 MongoClient.connect(db_url, (err, database) => {
   assert.equal(null, err);
   //if (err) return console.log(err)

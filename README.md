@@ -2,7 +2,6 @@
 An event viewing app in Nodejs.
 
 ##Up Next
-* Admin user creation script
-* Implement authentication using passport maybe
+* Implement authentication using passport, passport-local maybe
 * Sessions
 * Bootstrap
