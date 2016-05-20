@@ -6,7 +6,10 @@
   <body>
     <ul>
       {% for event in events %}
-        {{ event.name }}
+        <li><b>Event I.D:</b> {{ event._id }}</li>
+        <li><b>Event Name:</b> {{ event.event_name }}</li>
+        <li><b>Event Address:</b> {{ event.event_address }}</li>
+        <br><br><br>
       {% endfor %}
     </ul>
   </body>
