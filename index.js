@@ -14,6 +14,8 @@ var nunjucks = require("nunjucks");
 var nunjucksEnv = new nunjucks.Environment( new nunjucks.FileSystemLoader( path.join( __dirname, "/views" ) ));
 nunjucksEnv.express( app );
 
+var gravatar = require('nodejs-gravatar');
+
 const MongoClient = require("mongodb").MongoClient
 var db
 var db_username = process.env.NODEJS_EVA_DB_USERNAME
@@ -56,7 +58,9 @@ app.get("/events", function(req, res) {
     assert.equal(null, err);
     //if (err) return console.log(err)
     var title = "Event Listing"
-    res.render('events.html', {events: result, title})
+    dAvatar = gravatar.imageUrl('example@gmail.com' ,  {s: '100', r: 'w', d: 'mm'}, true)
+
+    res.render('events.html', {events: result, title, dAvatar})
   })
 });
 
