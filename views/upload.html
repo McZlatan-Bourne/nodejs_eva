@@ -3,10 +3,14 @@
         <title>Event Posting Form</title>
     </head>
    <body>
+    
        <h3>File Upload:</h3>
+       <p style="color: red">{{error}}</p>
         Fill the form to post an event: <br><br>
-        <form action="/upload-event" method="POST">
+        <form method="POST">
+            <input type="hidden" value="{{csrfToken}}" name="_csrf" />
             Event Name: <input type="text" name="event_name" /><br><br>
+            Organizer Address: <input type="email" name="org_email" /><br><br>
             Event Address: <input type="text" name="event_address" /><br><br>
             <br/>
             <input type="submit" value="Post Event" />

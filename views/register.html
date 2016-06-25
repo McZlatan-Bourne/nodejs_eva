@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>E.V.A Register</title>
+    </head>
+   <body>
+       <p style="color: red">{{error}}</p>
+        Register to continue: <br><br>
+        <form method="POST">
+            <input type="hidden" value="{{csrfToken}}" name="_csrf" />
+            Username: <input type="text" name="username" /><br><br>
+            Email: <input type="email" name="email" /><br><br>
+            Password: <input type="password" name="password" /><br><br>
+            <br/>
+            <input type="submit" value="Register" />
+        </form>
+    </body>
+</html>
