@@ -168,6 +168,12 @@ app.get("/events", function(req, res) {
   })
 });
 
+// 404 for all undefined routes
+app.get('*', function(req, res){
+  res.send('what???', 404);
+});
+
+
 var server = app.listen(process.env.PORT || 8081, function () {
     var host = server.address().address
     var port = server.address().port
